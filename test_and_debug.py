@@ -15,8 +15,30 @@
 
 #3 wirte a program ask for first and last name
 
-first = input("Enter first name ")
-last = input("Enter last name: ")
+# first = input("Enter first name ")
+# last = input("Enter last name: ")
 
-# print(f"\'Hello, {first} {last}!\'")
-print(f"hello {first} and {last} namelast")
+# # print(f"\'Hello, {first} {last}!\'")
+# print(f"hello {first} and {last} namelast")
+
+# number_input = int(input("Number of input"))
+
+# temp = 1
+# final_number = 0
+
+# while temp <= number_input:
+#     number = float(input("Enter your number"))
+#     final_number += number
+#     temp += 1
+
+# print(final_number/number_input)
+
+
+input_number = input("Enter list of number")
+convert_to_list = input_number.split(" ")
+
+final = 0
+for num in convert_to_list:
+    final += int(num)
+
+print(final/len(convert_to_list))
