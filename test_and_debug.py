@@ -34,11 +34,13 @@
 # print(final_number/number_input)
 
 
-input_number = input("Enter list of number")
-convert_to_list = input_number.split(" ")
+# input_number = input("Enter list of number")
+# convert_to_list = input_number.split(" ")
 
-final = 0
-for num in convert_to_list:
-    final += int(num)
+# final = 0
+# for num in convert_to_list:
+#     final += int(num)
 
-print(final/len(convert_to_list))
+# print(final/len(convert_to_list))
+
+
