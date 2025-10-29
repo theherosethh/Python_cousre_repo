@@ -94,8 +94,64 @@
 # remove_duplicat = list(set(num1))
 # print(remove_duplicat)
 
-num = input("Enter input: ")
-num1 = list(map(int, num.strip().split()))
+#count occourance
+# num = input("Enter numbers separated by spaces: ")
+# num1 = list(map(int, num.strip().split()))
 
-count = num.count(num1)
+# value = int(input("Enter value to count: "))
 
+# count = num1.count(value)
+
+# print(count)
+
+#merge list
+
+# num1 = input("Enter numbers of list 1: ")
+# num2 = list(map(int, num1.strip().split()))
+# print(num2)
+# num3 = input("Enter numbers of list 2: ")
+# num4 = list(map(int, num3.strip().split()))
+# print(num4)
+
+# num2.extend(num4)
+# print(num2)
+
+#find seccond largest 
+# num = input("Enter numbers: ")
+# num1 = list(map(int, num.strip().split()))
+
+# largest = max(num1)
+
+# while largest in num1:
+#     num1.remove(largest)
+
+# if num1:
+#     second = max(num1)
+#     print("The second largest number is:", second)
+# else:
+#     print("There is no second largest number.")
+
+
+#return new list with common element:
+# from collections import Counter
+# num1 = input("Enter numbers of list 1: ")
+# num2 = list(map(int, num1.strip().split()))
+# c1 = Counter(num2)
+# print(num2)
+# num3 = input("Enter numbers of list 2: ")
+# num4 = list(map(int, num3.strip().split()))
+# c2 = Counter(num4)
+# print(num4)
+
+# common = list((c1 & c2).elements())
+# print(f" common from list {common}")
+
+#remove all element appear more than one
+from collections import Counter
+num = input("Enter numbers: ")
+num2 = list(map(int, num.strip().split()))
+
+count = Counter(num2)
+
+duplicate = [item for item in num2 if count[item] == 1]
+print(duplicate)
